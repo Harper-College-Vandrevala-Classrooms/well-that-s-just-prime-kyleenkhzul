@@ -18,7 +18,7 @@ public class Factorizer {
       number /= 2;
     }
 
-    // Factors out all 3's using modulo division
+    // Factors out all odds using modulo division
     for(int i = 3; i <= Math.sqrt(number); i+=2) {
       while(number % i == 0) {
         factors.add(i);
