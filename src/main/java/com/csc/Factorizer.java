@@ -57,4 +57,13 @@ public class Factorizer {
     
     return initial == number;
   }
+
+  public boolean isComposite(int number) {
+    if(number != 1 && number != 0 && !isPrime(number)) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
 }

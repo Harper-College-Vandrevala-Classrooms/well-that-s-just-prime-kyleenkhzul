@@ -72,4 +72,30 @@ public class TestFactorizer {
   public void testIfNumber0IsPrime() {
     assertEquals(false, factorizer.isPrime(0));
   }
+
+  // Portfolio Add-On, isComposite tests
+  @Test
+  public void testIfNumber36IsComposite() {
+    assertEquals(true, factorizer.isComposite(36));
+  }
+
+  @Test
+  public void testIfNumber12IsComposite() {
+    assertEquals(true, factorizer.isComposite(12));
+  }
+
+  @Test
+  public void testIfNumber17IsComposite() {
+    assertEquals(false, factorizer.isComposite(17));
+  }
+
+  @Test
+  public void testIfNumber1IsComposite() {
+    assertEquals(false, factorizer.isComposite(1));
+  }
+
+  @Test
+  public void testIfNumber0IsComposite() {
+    assertEquals(false, factorizer.isComposite(0));
+  }
 }
